@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package PhotoMash
+ * @package snapie
  */
 
 get_header(); ?>

@@ -1,19 +1,19 @@
 /*
-Theme Name: PhotoMash
-Theme URI: http://underscores.me/
-Author: Underscores.me
-Author URI: http://underscores.me/
+Theme Name: Snapie
+Theme URI: https://aqibashef.me/projects/snapie
+Author: Aqib Ashef
+Author URI: http://aqibashef.me/
 Description: Description
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: photomash
-Tags:
+Text Domain: snapie
+Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, photography
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-PhotoMash is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+snapie is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -1287,7 +1287,7 @@ div.nav-menu-footer {
 }
 
 .attribution a {
-	color: orangered;
+	color: #0093c9;
 }
 
 .attribution i.fa.fa-heart {

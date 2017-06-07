@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package PhotoMash
+ * @package snapie
  */
 
 ?>
@@ -15,7 +15,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php photomash_posted_on(); ?>
+			<?php snapie_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -25,6 +25,6 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php photomash_entry_footer(); ?>
+		<?php snapie_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

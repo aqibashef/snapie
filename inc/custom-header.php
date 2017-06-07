@@ -12,33 +12,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package PhotoMash
+ * @package snapie
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses photomash_header_style()
+ * @uses snapie_header_style()
  */
-function photomash_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'photomash_custom_header_args', array(
+function snapie_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'snapie_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'photomash_header_style',
+		'wp-head-callback'       => 'snapie_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'photomash_custom_header_setup' );
+add_action( 'after_setup_theme', 'snapie_custom_header_setup' );
 
-if ( ! function_exists( 'photomash_header_style' ) ) :
+if ( ! function_exists( 'snapie_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see photomash_custom_header_setup().
+ * @see snapie_custom_header_setup().
  */
-function photomash_header_style() {
+function snapie_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*

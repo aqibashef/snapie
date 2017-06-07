@@ -7,7 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package PhotoMash
+ * @package snapie
  */
 
 ?><!DOCTYPE html>
@@ -23,13 +23,13 @@
 <body <?php body_class(); ?>>
 <div id="wptime-plugin-preloader"></div>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'photomash' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'snapie' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-nav-bar-wrapper center-v">
 			<div class="site-branding center-h">
 				<?php
-				$logo_id = get_theme_mod('photomash_customizer_nav_menu_image');
+				$logo_id = get_theme_mod('snapie_customizer_nav_menu_image');
 				if($logo_id):
 //					$logo_url = wp_get_attachment_image_url($logo_id, 'full'); ?>
 					<a href="<?php echo esc_url(home_url('/')); ?>" class="site-title"><img src="<?php echo $logo_id; ?>"
