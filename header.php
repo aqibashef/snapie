@@ -27,11 +27,11 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-nav-bar-wrapper center-v">
-			<div class="site-branding center-h">
+			<div class="site-branding text-center">
 				<?php
 				$logo_id = get_theme_mod('snapie_customizer_nav_menu_image');
 				if($logo_id):
-//					$logo_url = wp_get_attachment_image_url($logo_id, 'full'); ?>
+					?>
 					<a href="<?php echo esc_url(home_url('/')); ?>" class="site-title"><img src="<?php echo $logo_id; ?>"
 																							alt="Logo"></a>
 					<?php
@@ -39,13 +39,13 @@
 					if ( is_front_page() && is_home() ) : ?>
 						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 					<?php else : ?>
-						<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+						<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<?php
 					endif;
 
 					$description = get_bloginfo( 'description', 'display' );
 					if ( $description || is_customize_preview() ) : ?>
-						<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+						<p class="site-description hidden-sm hidden-xs"><?php echo $description; /* WPCS: xss ok. */ ?></p>
 						<?php
 					endif;
 				endif;?>

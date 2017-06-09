@@ -13,11 +13,9 @@
  */
 
 get_header(); ?>
-
+<div class="col-sm-6">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="col-md-8">
-
 		<?php
 		if ( have_posts() ) :
 
@@ -48,10 +46,11 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+</div>
 <?php
+echo '<div class="col-sm-6 hidden-xs">';
 get_sidebar();
+echo '</div>';
 get_footer();
