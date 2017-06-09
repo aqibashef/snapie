@@ -161,3 +161,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+* Includes the setup file for metabox
+*/
+require get_template_directory() . '/inc/custom-meta-box-setup.php';
+
+/**
+* Includes the setup file for custom post types
+*/
+require get_template_directory() . '/inc/custom-post-type-setup.php';
