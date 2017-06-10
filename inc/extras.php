@@ -38,61 +38,6 @@ function snapie_pingback_header() {
 }
 add_action( 'wp_head', 'snapie_pingback_header' );
 
-function snapie_projects_post_type(){
-    register_post_type('projects', array(
-        'labels'				=> array(
-            'name'					=> __('Projects', 'snapie'),
-            'singular_name'			=> __('Project', 'snapie'),
-            'menu_name'          	=> __( 'Projects', 'snapie' ),
-            'name_admin_bar'     	=> __( 'Project', 'snapie' ),
-            'add_new'            	=> __( 'Add New', 'snapie' ),
-            'add_new_item'       	=> __( 'Add New Project', 'snapie' ),
-            'new_item'           	=> __( 'New Project', 'snapie' ),
-            'edit_item'          	=> __( 'Edit Project', 'snapie' ),
-            'view_item'          	=> __( 'View Project', 'snapie' ),
-            'all_items'          	=> __( 'All Projects', 'snapie' ),
-            'search_items'       	=> __( 'Search Project', 'snapie' ),
-            'parent_item_colon'  	=> __( 'Parent Project:', 'snapie' ),
-            'not_found'          	=> __( 'No project found.', 'snapie' ),
-            'not_found_in_trash' 	=> __( 'No project found in Trash.', 'snapie' )
-        ),
-        'description'			=> __('All new amazing projects here', 'snapie'),
-        'public'             => true,
-        'publicly_queryable' => true,
-        'show_ui'            => true,
-        'show_in_menu'       => true,
-        'query_var'          => true,
-        'capability_type'    => 'post',
-        'has_archive'        => true,
-        'hierarchical'       => true,
-        'menu_position'      => null,
-        'supports'           => array( 'title', 'thumbnail', 'comments', 'editor' )
-    ));
-
-    $labels = array(
-        'name'               => __('Project Categories', 'snapie'),
-        'singular'           => __('Project Category', 'snapie'),
-        'search_items'       => __('Search Project Category', 'snapie'),
-        'all_items'         => __( 'All Project Categories', 'snapie' ),
-        'parent_item'       => __( 'Parent Project Category', 'snapie' ),
-        'parent_item_colon' => __( 'Parent Project Category:', 'snapie' ),
-        'edit_item'         => __( 'Edit Project Category', 'snapie' ),
-        'update_item'       => __( 'Update Project Category', 'snapie' ),
-        'add_new_item'      => __( 'Add New Project Category', 'snapie' ),
-        'new_item_name'     => __( 'New Project Category Name', 'snapie' ),
-        'menu_name'         => __( 'Project Category', 'snapie' ),
-    );
-
-    register_taxonomy('project-category', 'projects', array(
-        'hierarchical'      => true,
-        'labels'            => $labels,
-        'show_ui'           => true,
-        'show_admin_column' => true,
-        'query_var'         => true
-    ));
-}
-add_action('init', 'snapie_projects_post_type');
-
 /**
  * Register Widget area for nav menu
  */

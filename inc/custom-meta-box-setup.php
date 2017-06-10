@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Adds custom meta boxes for projects post type
+ */
+
 function add_metabox_for_projects_post_type($meta_boxes){
 
     $meta_boxes[] = array(
@@ -18,6 +22,10 @@ function add_metabox_for_projects_post_type($meta_boxes){
 }
 
 add_filter('rwmb_meta_boxes', 'add_metabox_for_projects_post_type');
+
+/**
+ * Adds custom metaboxes for pages.
+ */
 
 function add_metabox_for_pages($meta_boxes){
 	// $gallery_terms = get_terms( array(

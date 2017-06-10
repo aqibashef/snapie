@@ -27,7 +27,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<div class="col-sm-6">
+</div>
 
 <?php
 echo '<div class="col-sm-6">';
