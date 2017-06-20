@@ -50,7 +50,5 @@ get_header(); ?>
 	</div><!-- #primary -->
 </div>
 <?php
-echo '<div class="col-sm-6 hidden-xs">';
 get_sidebar();
-echo '</div>';
 get_footer();

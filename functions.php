@@ -176,3 +176,8 @@ require get_template_directory() . '/inc/custom-taxonomy-setup.php';
 * Includes the setup file for metabox
 */
 require get_template_directory() . '/inc/custom-meta-box-setup.php';
+
+/**
+* Includes the setup file for widgets
+*/
+require get_template_directory() . '/inc/widgets/widgets_init.php';

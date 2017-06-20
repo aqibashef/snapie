@@ -105,4 +105,23 @@ jQuery(document).ready(function ($) {
     $(".gallery-wrapper img").on("contextmenu", function () {
         return false;
     });
+
+    $('body.search.search-results article.photos a img').on('contextmenu', function(){
+        return false;
+    });
+
+    $('body.search.search-results main').magnificPopup({
+        delegate: 'article.photos a',
+        type: 'image',
+        gallery: {
+            enabled: false
+        },
+        callbacks: {
+            change: function () {
+                this.content.on("contextmenu", function () {
+                    return false;
+                })
+            }
+        }
+    });
 });

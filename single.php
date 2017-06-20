@@ -30,7 +30,5 @@ get_header(); ?>
 </div>
 
 <?php
-echo '<div class="col-sm-6">';
 get_sidebar();
-echo '</div>';
 get_footer();

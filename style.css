@@ -1,6 +1,6 @@
 /*
 Theme Name: Snapie
-Theme URI: https://aqibashef.me/projects/snapie
+Theme URI: http://wpwagon.com/themes/snapie
 Author: Aqib Ashef
 Author URI: http://aqibashef.me/
 Description: Description
@@ -442,8 +442,8 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+	border-color: #ccc;
+	background: #efefef;
 }
 
 button:focus,
@@ -755,6 +755,9 @@ a:active {
 /* Make sure select elements fit in widgets. */
 .widget select {
 	max-width: 100%;
+	width: 100%;
+	padding: 8px 10px;
+	border-radius: 2px;
 }
 
 /*--------------------------------------------------------------
@@ -1095,7 +1098,7 @@ div.nav-menu-footer {
 .site-content{
 	width: 80%;
 	float: right;
-	padding: 100px 30px;
+	padding: 100px 30px 50px 30px;
 	overflow: hidden;
 }
 
@@ -1182,6 +1185,27 @@ div.nav-menu-footer {
 	.photo-archive-container .photo-container{
 		padding-left: 0px;
 	}
+}
+
+.archive.post-type-archive-photos .pagination {
+    width: 80vw;
+    text-align: center;
+    position: fixed;
+    bottom: 10vh;
+    left: 20vw;
+}
+
+.archive.post-type-archive-photos .pagination .page-numbers.current{
+	padding: 10px 10px;
+	border: none;
+}
+
+.archive.post-type-archive-photos .pagination .page-numbers{
+	font-family: 'Droid Serif', sans-serif;
+	font-size: 16px;
+	border: 1px solid #666;
+	padding: 10px 15px;
+	border-radius: 2px;
 }
 
 /** -------------------------------------------------------------------------- **/
@@ -1301,6 +1325,50 @@ div.nav-menu-footer {
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
 	box-shadow: none;
 	border: none;
+}
+
+/** -------------------------------------------------------------------------- **/
+
+/** =================================== Widgets ============================== **/
+
+h2.widget-title {
+    font-size: 24px;
+    color: #666;
+    padding: 5px 0px;
+}
+
+.widget ul{
+	padding-left: 5px; 
+}
+
+.widget ul li{
+	margin-bottom: 10px;
+}
+
+.widget.widget_pages li::before,
+.widget.widget_nav_menu li::before,
+.widget.widget_meta li::before,
+.widget.widget_archive li::before,
+.widget.widget_categories li::before {
+    content: "\f101";
+    font-family: 'FontAwesome', sans-serif;
+    padding: 0px 10px 0px 0px;
+}
+
+.widget.widget_pages li,
+.widget.widget_nav_menu li,
+.widget.widget_meta li,
+.widget.widget_archive li,
+.widget.widget_categories li {
+    margin-bottom: 5px;
+}
+
+.widget.widget_recent_entries ul{
+	padding-top: 10px;
+}
+
+.widget.widget_rss .widget-title .rss-widget-icon{
+	display: none;
 }
 
 /** -------------------------------------------------------------------------- **/

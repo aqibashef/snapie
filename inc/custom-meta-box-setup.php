@@ -29,9 +29,9 @@ add_filter('rwmb_meta_boxes', 'add_metabox_for_projects_post_type');
 
 function add_metabox_for_pages($meta_boxes){
 	// $gallery_terms = get_terms( array(
-	//     'taxonomy' => 'gallery',
-	//     'hide_empty' => false,
-	// ) );
+ //        'taxonomy'          => 'gallery',
+ //        'hide_empty'        => false
+ //    ));
 	// print_r($gallery_terms);
 	$meta_boxes[] = array(
 		'title'				=> __('Page Settings', 'snapie'),

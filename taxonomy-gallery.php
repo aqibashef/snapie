@@ -11,7 +11,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area aqib">
 		<main id="main" class="site-main" role="main">
-            <div class="col-md-12 gallery-wrapper">
+            <div class="col-md-8 gallery-wrapper">
             <?php
             if ( have_posts() ) : ?>
                 <?php
@@ -46,5 +46,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php
-get_sidebar();
 get_footer();
