@@ -33,7 +33,8 @@ add_action( 'customize_preview_init', 'photomash_customize_preview_js' );
 
 function snapie_customizer_nav_menu_image($wp_customize){
 	$wp_customize->add_setting('snapie_customizer_nav_menu_image', array(
-		'sanitize_callback'		=> 'snapie_customizer_sanitizer'
+		'sanitize_callback'		=> 'snapie_customizer_sanitizer',
+		'transport'				=> 'refresh'
 	));
 
 	$wp_customize->add_control(new WP_Customize_Image_Control(

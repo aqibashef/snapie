@@ -31,6 +31,7 @@
 				<?php
 				$logo_id = get_theme_mod('snapie_customizer_nav_menu_image');
 				if($logo_id):
+					print_r($logo_id);
 					?>
 					<a href="<?php echo esc_url(home_url('/')); ?>" class="site-title"><img src="<?php echo $logo_id; ?>"
 																							alt="Logo"></a>

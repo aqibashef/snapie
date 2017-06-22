@@ -1,29 +1,22 @@
 /**
  * Created by aqib on 10/10/16.
  */
-
-
 jQuery(document).ready(function ($) {
     $(".photo-container article img").one("load", function () {
         var photoContainer = $(".photo-container");
         var width = 0;
         var articles = $(".photo-container article");
         articles.each(function (index) {
-            console.log("index: " + index);
-            console.log("width: " + $(this).outerWidth());
             width += parseFloat($(this).outerWidth());
-            console.log("summed width: " + width);
         });
         width += $(window).outerWidth() * 0.2 + 100;
-        console.log(articles.length);
-        console.log("total width: " + width);
         photoContainer.css('width', parseInt(width) + "px");
 
         var elem = $.jInvertScroll(['.photo-container'],        // an array containing the selector(s) for the elements you want to animate
             {
                 height: parseInt(width), // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
                 onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
-                    // console.log(percent);
+                    
                 }
             });
 
