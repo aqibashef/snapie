@@ -968,6 +968,7 @@ header#masthead {
 
 .site-branding img{
 	border-radius: 50%;
+	max-width: 125px;
 }
 
 .site-branding a{
@@ -1188,11 +1189,11 @@ div.nav-menu-footer {
 }
 
 .archive.post-type-archive-photos .pagination {
-    width: 80vw;
-    text-align: center;
-    position: fixed;
-    bottom: 10vh;
-    left: 20vw;
+	width: 80vw;
+	text-align: center;
+	position: fixed;
+	bottom: 10vh;
+	left: 20vw;
 }
 
 .archive.post-type-archive-photos .pagination .page-numbers.current{
@@ -1332,13 +1333,13 @@ div.nav-menu-footer {
 /** =================================== Widgets ============================== **/
 
 h2.widget-title {
-    font-size: 24px;
-    color: #666;
-    padding: 5px 0px;
+	font-size: 24px;
+	color: #666;
+	padding: 5px 0px;
 }
 
 .widget ul{
-	padding-left: 5px; 
+	padding-left: 5px;
 }
 
 .widget ul li{
@@ -1350,9 +1351,9 @@ h2.widget-title {
 .widget.widget_meta li::before,
 .widget.widget_archive li::before,
 .widget.widget_categories li::before {
-    content: "\f101";
-    font-family: 'FontAwesome', sans-serif;
-    padding: 0px 10px 0px 0px;
+	content: "\f101";
+	font-family: 'FontAwesome', sans-serif;
+	padding: 0px 10px 0px 0px;
 }
 
 .widget.widget_pages li,
@@ -1360,7 +1361,7 @@ h2.widget-title {
 .widget.widget_meta li,
 .widget.widget_archive li,
 .widget.widget_categories li {
-    margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .widget.widget_recent_entries ul{

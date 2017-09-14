@@ -32,20 +32,17 @@ add_action( 'customize_preview_init', 'photomash_customize_preview_js' );
  */
 
 function snapie_customizer_nav_menu_image($wp_customize){
-	$wp_customize->add_setting('snapie_customizer_nav_menu_image', array(
-		'sanitize_callback'		=> 'snapie_customizer_sanitizer',
-		'transport'				=> 'refresh'
-	));
+    $wp_customize->add_setting('snapie_customizer_nav_menu_image');
 
-	$wp_customize->add_control(new WP_Customize_Image_Control(
-		$wp_customize,
-		'snapie_customizer_nav_menu_image',
-		array(
-			'label'      			=> __( 'Navigation Menu Image', 'snapie' ),
-			'section'    			=> 'title_tagline',
-			'settings'   			=> 'snapie_customizer_nav_menu_image'
-		)
-	));
+    $wp_customize->add_control(new WP_Customize_Image_Control(
+        $wp_customize,
+        'photomash_customizer_nav_menu_image',
+        array(
+            'label'      => __( 'Navigation Menu Image', 'photomash' ),
+            'section'    => 'title_tagline',
+            'settings'   => 'snapie_customizer_nav_menu_image'
+        )
+    ));
 }
 add_action('customize_register', 'snapie_customizer_nav_menu_image');
 

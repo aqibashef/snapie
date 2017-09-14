@@ -11,9 +11,9 @@
 
 get_header(); ?>
 <?php
-global $wp_query;
-//$args = array_merge( $wp_query->query_vars, array( 'post_type' => 'photos' ) );
-//query_posts( 'post_type=photos&posts_per_page=-1' );
+
+$gallery = rwmb_get_value('photo_archive_category');
+
 query_posts( array(
     'post_type'     => 'photos',
     'post_per_page' => -1,
@@ -22,7 +22,7 @@ query_posts( array(
         array(
             'taxonomy'      => 'gallery',
             'field'         => 'slug',
-            'terms'         => 'home'
+            'terms'         => $gallery->slug
         )
     )
 ));
