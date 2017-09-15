@@ -41,24 +41,24 @@
 	 * Adds a custom taxonomy named project category for projects post type.
 	 */
 
-	function snapie_project_category_taxonomy($args){
+	function snapie_album_category_taxonomy($args){
 		$labels = array(
-	        'name'              => __('Project Categories', 'snapie'),
-	        'singular'          => __('Project Category', 'snapie'),
-	        'search_items'      => __('Search Project Category', 'snapie'),
-	        'all_items'         => __( 'All Project Categories', 'snapie' ),
-	        'parent_item'       => __( 'Parent Project Category', 'snapie' ),
-	        'parent_item_colon' => __( 'Parent Project Category:', 'snapie' ),
-	        'edit_item'         => __( 'Edit Project Category', 'snapie' ),
-	        'update_item'       => __( 'Update Project Category', 'snapie' ),
-	        'add_new_item'      => __( 'Add New Project Category', 'snapie' ),
-	        'new_item_name'     => __( 'New Project Category Name', 'snapie' ),
-	        'menu_name'         => __( 'Project Category', 'snapie' ),
+	        'name'              => __('Album Categories', 'snapie'),
+	        'singular'          => __('Album Category', 'snapie'),
+	        'search_items'      => __('Search Album Category', 'snapie'),
+	        'all_items'         => __( 'All Album Categories', 'snapie' ),
+	        'parent_item'       => __( 'Parent Album Category', 'snapie' ),
+	        'parent_item_colon' => __( 'Parent Album Category:', 'snapie' ),
+	        'edit_item'         => __( 'Edit Album Category', 'snapie' ),
+	        'update_item'       => __( 'Update Album Category', 'snapie' ),
+	        'add_new_item'      => __( 'Add New Album Category', 'snapie' ),
+	        'new_item_name'     => __( 'New Album Category Name', 'snapie' ),
+	        'menu_name'         => __( 'Album Category', 'snapie' ),
 	    );
 
 	    $args[] = array(
-	    	'taxonomy'			=> 'project-category',
-	    	'post_types'		=> array('projects'),
+	    	'taxonomy'			=> 'album-category',
+	    	'post_types'		=> array('albums'),
 	    	'args'				=> array(
 		        'hierarchical'      => true,
 		        'labels'            => $labels,
@@ -72,6 +72,6 @@
 	    return $args;
 	}
 
-	add_filter('themebuilder_taxonomies', 'snapie_gallery_taxonomy');
+	add_filter('themebuilder_taxonomies', 'snapie_album_category_taxonomy');
 
 ?>

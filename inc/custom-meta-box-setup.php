@@ -8,7 +8,7 @@ function add_metabox_for_projects_post_type($meta_boxes){
 
     $meta_boxes[] = array(
         'title'             => __('Display Images', 'snapie'),
-        'post_types'        => 'projects',
+        'post_types'        => 'albums',
         'fields'            => array(
             array(
                 'id'            => 'images',
