@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="col-md-4 preview">
+<div class="col-md-6 preview">
     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <header class="entry-header">
             <?php
@@ -25,5 +25,7 @@
                 <?php
             endif;
             ?>
+            <h3><?php echo get_the_title(); ?></h3>
+        </header>
     </article><!-- #post-## -->
 </div>
