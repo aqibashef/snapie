@@ -1375,6 +1375,14 @@ h2.widget-title {
 	display: none;
 }
 
+.widget.widget_search label{
+	display: block;
+}
+
+.widget.widget_search label .search-field{
+	display: block;
+}
+
 /** -------------------------------------------------------------------------- **/
 
 .attribution {
