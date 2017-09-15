@@ -74,7 +74,7 @@ function snapie_albums_post_type($args){
 	        'has_archive'        	=> true,
 	        'hierarchical'       	=> true,
 	        'menu_position'      	=> null,
-	        'supports'           	=> array( 'title', 'thumbnail', 'comments', 'editor' )
+	        'supports'           	=> array( 'title', 'thumbnail', 'comments')
 	    )
 	);
 	return $args;
