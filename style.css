@@ -1371,6 +1371,10 @@ h2.widget-title {
 	display: none;
 }
 
+.widget.widget_search .search-submit{
+	display: none;
+}
+
 /** -------------------------------------------------------------------------- **/
 
 .attribution {
