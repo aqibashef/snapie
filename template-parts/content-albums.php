@@ -25,7 +25,7 @@
                 <?php
             endif;
             ?>
-            <h3><?php echo get_the_title(); ?></h3>
+            <h4><?php echo get_the_title(); ?></h4>
         </header>
     </article><!-- #post-## -->
 </div>

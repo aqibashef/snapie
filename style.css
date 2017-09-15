@@ -1216,8 +1216,6 @@ div.nav-menu-footer {
 .project-archive-wrapper .preview {
 	padding: 5px;
 	margin-bottom: 5px;
-	max-height: 200px;
-	overflow: hidden;
 }
 
 .project-archive-wrapper .preview img{
