@@ -1181,6 +1181,7 @@ div.nav-menu-footer {
 
 .mfp-arrow:hover{
 	box-shadow: none;
+	background-color: transparent;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1325,6 +1326,7 @@ div.nav-menu-footer {
 .mfp-image-holder .mfp-close, .mfp-iframe-holder .mfp-close {
 	box-shadow: none;
 	border: none;
+	background: transparent;
 }
 
 /** -------------------------------------------------------------------------- **/
