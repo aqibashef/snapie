@@ -23,9 +23,10 @@ get_header(); ?>
 			endif;
 
 		endwhile; // End of the loop.
-        the_posts_pagination();
 		?>
-
+            <div class="row">
+                <?php the_posts_pagination(); ?>
+            </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
